@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.buste.smarthome.Main2Activity">
+
+    <Button
+        android:id="@+id/angry_light"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="54dp"
+
+        android:layout_marginEnd="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="83dp"
+        android:background="@drawable/buttonshape"
+        android:onClick="onLight"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="LIGHT"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/angry_Temp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/angry_Temp"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="61dp"
+
+        android:layout_marginEnd="57dp"
+        android:layout_marginStart="57dp"
+        android:background="@drawable/buttonshape"
+        android:onClick="onTemperature"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Temperature"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/angry_Burglar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/angry_light" />
+
+    <Button
+        android:id="@+id/angry_Burglar"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="133dp"
+
+        android:layout_marginEnd="57dp"
+        android:layout_marginStart="57dp"
+        android:background="@drawable/buttonshape"
+        android:onClick="onBurglar"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Burglar"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/angry_Temp" />
+
+</android.support.constraint.ConstraintLayout>
